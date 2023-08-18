@@ -1,0 +1,117 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    padding-top: 2rem;
+}
+
+.background{
+    background: url("plans-background.jpg") center/cover;
+    filter: grayscale(40%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.plans{
+    padding-top: 2rem ;
+    
+    z-index: 0;
+}
+.plan{
+    background: #AFE1AF;
+    border: 3px solid black;
+    border-left: none;
+    margin: 1rem 0;
+    /* padding: 1rem 1rem; */
+    width: 80%;
+    position: relative;
+}
+ 
+.plan a{
+    text-decoration: none;
+    display: block;
+    padding: 2rem;
+}
+ 
+.plan:hover,
+.plan:active{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-color: #272727;
+}
+
+.plan__title{
+    color: black;
+    text-decoration: none;
+}
+
+.plan__badge{
+    color: black;
+    position: absolute;
+    top:0;
+    right:0;
+    margin: 1rem;
+    padding: 0.5rem 0.5rem;
+    color: white;
+    background: #ff5454;
+    font-size: 0.8rem;
+    border-radius: 6px;
+}
+
+.plan__subtitle{
+    color: #5e5e5e;
+}
+
+.plan__description{
+    background: white;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: black;
+}
+
+#plus{
+    background: rgb(204, 235, 197, 0.95);
+    margin-top: 4.5rem;
+}
+
+#free{
+    background: rgba(234, 252, 237, 0.95);
+    float: right;
+    border-right: none;
+    border-left: 3px solid black;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#premium{
+    background: rgb(63, 128, 70,0.95);
+}
+#premium .plan__title{
+    color: white;
+}
+
+#premium .plan__subtitle{
+    color: #b8b8b8;
+}
+
+@media(min-width: 40rem) {
+    main {
+        margin: 3rem auto;
+        max-width: 1500px;
+    }
+}
+
+@media(min-width: 1500px) {
+    .plan {
+        border-left:  3px solid black;
+    }
+
+    #free {
+        border-right: 3px solid black;
+    }
+}
